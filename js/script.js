@@ -31,7 +31,7 @@ const i18n = {
 
         "edu.tag": "ACADEMIC JOURNEY", "edu.title": "Education Timeline",
         "edu.item1.title": "Bachelor's Degree, Computer Science", "edu.item1.inst": "Bangkok University",
-        "edu.item1.date": "Year 1 — Present (Year 3)",
+        "edu.item1.date": "Year 1 — Present (Year 4)",
         "edu.item1.desc": "Currently maintaining a cumulative GPA of 3.24, with 109 total credits completed so far.",
         "edu.item2.title": "High School Diploma (Vocational Certificate Equivalent)",
         "edu.item2.inst": "Kusoom Technology Vocational College",
@@ -67,7 +67,7 @@ const i18n = {
         "contact.subtext": "Currently seeking an internship / cooperative education placement to gain hands-on experience in Mobile Application Development, Software Testing (QA), or UI/UX Design.",
         "contact.label.email": "Email", "contact.label.phone": "Phone",
         "contact.label.github": "GitHub", "contact.label.linkedin": "LinkedIn",
-        "contact.form.name": "Your Name", "contact.form.namePh": "John Doe",
+        "contact.form.name": "Your Name", "contact.form.namePh": "Sam Smith",
         "contact.form.nameErr": "Please enter your name",
         "contact.form.email": "Your Email", "contact.form.emailErr": "Please enter a valid email address",
         "contact.form.subject": "Subject", "contact.form.subjectPh": "Internship Opportunity",
@@ -91,8 +91,8 @@ const i18n = {
         "hero.badge1title": "นักพัฒนาแอปมือถือ", "hero.badge2title": "นักศึกษา วท.บ.", "hero.badge2sub": "มหาวิทยาลัยกรุงเทพ",
 
         "about.tag": "รู้จักฉันมากขึ้น", "about.title": "เกี่ยวกับฉัน",
-        "about.heading": "คณะเทคโนโลยีสารสนเทศและนวัตกรรม สาขาวิทยาการคอมพิวเตอร์",
-        "about.text": '"ทำอย่างไรให้แอปพลิเคชันทั้งใช้งานง่าย สวยงาม และไม่มี Bug?" คำถามนี้จุดประกายให้สนุกกับการเรียนรู้การพัฒนาซอฟต์แวร์แบบครบวงจร—ทั้งในมุมของ Developer ที่ชอบลงมือเขียนโค้ด, UI/UX Designer ที่ใส่ใจความรู้สึกของผู้ใช้ และ QA Tester ที่พิถีพิถันกับการเก็บรายละเอียด ในฐานะนักศึกษาวิทยาการคอมพิวเตอร์ ม.กรุงเทพ ฉันพร้อมเปิดรับเทคโนโลยีใหม่ๆ เสมอ และกำลังมองหาโอกาสฝึกงานเพื่อร่วมเปลี่ยนไอเดียให้กลายเป็นแอปพลิเคชันที่ใช้งานได้จริงค่ะ',
+        "about.heading": "นักศึกษาคณะเทคโนโลยีสารสนเทศและนวัตกรรม สาขาวิทยาการคอมพิวเตอร์",
+        "about.text": '"ทำอย่างไรให้แอปพลิเคชันทั้งใช้งานง่าย สวย และไม่มี Bug?" คำถามนี้ทำให้สนุกกับการเรียนรู้การพัฒนาซอฟต์แวร์แบบครบวงจร—ทั้งในมุมของ Developer ที่ชอบลงมือเขียนโค้ด, UI/UX Designer ที่ใส่ใจความรู้สึกและประสบการณ์ของผู้ใช้ และ QA Tester เก็บรายละเอียดเพื่อให้ได้ผลลัพธ์ที่ดีที่สุด ในฐานะนักศึกษาวิทยาการคอมพิวเตอร์ ม.กรุงเทพ พร้อมเปิดรับเทคโนโลยีใหม่ๆ เสมอ และกำลังมองหาโอกาสฝึกงานเพื่อร่วมเปลี่ยนไอเดียให้กลายเป็นแอปพลิเคชันที่ใช้งานได้จริงค่ะ',
         "about.label.fullname": "ชื่อ-นามสกุล", "about.value.fullname": "ศรีรัตน์ อินทลัย (หยก)",
         "about.label.email": "อีเมล", "about.label.phone": "เบอร์โทรศัพท์",
         "about.label.university": "มหาวิทยาลัย", "about.value.university": "มหาวิทยาลัยกรุงเทพ",
@@ -101,7 +101,7 @@ const i18n = {
 
         "edu.tag": "เส้นทางการศึกษา", "edu.title": "ไทม์ไลน์การศึกษา",
         "edu.item1.title": "ปริญญาตรี สาขาวิทยาการคอมพิวเตอร์", "edu.item1.inst": "มหาวิทยาลัยกรุงเทพ",
-        "edu.item1.date": "ปี 1 — ปัจจุบัน (ปี 3)",
+        "edu.item1.date": "ปี 1 — ปัจจุบัน (ปี 4)",
         "edu.item1.desc": "ปัจจุบันมีเกรดเฉลี่ยสะสม (Cum GPA.) 3.24 หน่วยกิตสะสมรวม 109 หน่วยกิต",
         "edu.item2.title": "มัธยมศึกษาตอนปลาย (เทียบเท่าประกาศนียบัตรวิชาชีพ)",
         "edu.item2.inst": "วิทยาลัยอาชีวศึกษากุสุมภ์เทคโนโลยี",
@@ -137,7 +137,7 @@ const i18n = {
         "contact.subtext": "ปัจจุบันกำลังมองหาโอกาสฝึกงาน หรือสหกิจศึกษา เพื่อสั่งสมประสบการณ์จริงด้านการพัฒนาแอปพลิเคชันมือถือ การทดสอบซอฟต์แวร์ (QA) หรือการออกแบบ UI/UX",
         "contact.label.email": "อีเมล", "contact.label.phone": "เบอร์โทรศัพท์",
         "contact.label.github": "GitHub", "contact.label.linkedin": "LinkedIn",
-        "contact.form.name": "ชื่อของคุณ", "contact.form.namePh": "สมชาย ใจดี",
+        "contact.form.name": "ชื่อของคุณ", "contact.form.namePh": "สมชาย มีสุข",
         "contact.form.nameErr": "กรุณากรอกชื่อของคุณ",
         "contact.form.email": "อีเมลของคุณ", "contact.form.emailErr": "กรุณากรอกอีเมลให้ถูกต้อง",
         "contact.form.subject": "หัวข้อ", "contact.form.subjectPh": "โอกาสฝึกงาน",
@@ -477,9 +477,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     let currentIndex = 0;
     let timer = null;
-    const slideInterval = 3500; // สลับรูปอัตโนมัติทุก 3.5 วินาที
+    const slideInterval = 3500; 
 
-    // สร้างจุด Dots ด้านล่างตามจำนวนรูปจริง
     slides.forEach((_, index) => {
         const dot = document.createElement("div");
         dot.classList.add("dot");
@@ -490,7 +489,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const dots = dotsContainer.querySelectorAll(".dot");
 
-    // ฟังก์ชันเปลี่ยนรูปไปที่ลำดับ index
     function goToSlide(index) {
         slides[currentIndex].classList.remove("active");
         dots[currentIndex].classList.remove("active");
@@ -500,31 +498,26 @@ document.addEventListener("DOMContentLoaded", () => {
         slides[currentIndex].classList.add("active");
         dots[currentIndex].classList.add("active");
 
-        resetTimer(); // รีเซ็ตเวลานับใหม่ทุกครั้งที่มีการกดเลือกรูปเอง
+        resetTimer(); 
     }
 
-    // ฟังก์ชันเริ่มนับเวลาสลับรูปอัตโนมัติ
     function startTimer() {
         timer = setInterval(() => {
             goToSlide(currentIndex + 1);
         }, slideInterval);
     }
 
-    // ฟังก์ชันรีเซ็ตเวลา
     function resetTimer() {
         clearInterval(timer);
         startTimer();
     }
 
-    // Event Listeners สำหรับปุ่มกด ซ้าย-ขวา
     if (nextBtn) nextBtn.addEventListener("click", () => goToSlide(currentIndex + 1));
     if (prevBtn) prevBtn.addEventListener("click", () => goToSlide(currentIndex - 1));
 
-    // หยุดสไลด์อัตโนมัติเมื่อเอาเมาส์ไปชี้ และเล่นต่อเมื่อเอาเมาส์ออก
     card.addEventListener("mouseenter", () => clearInterval(timer));
     card.addEventListener("mouseleave", startTimer);
 
-    // เริ่มทำงานระบบสไลด์
     startTimer();
 });
 

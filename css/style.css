@@ -1404,7 +1404,6 @@ html.light-theme .theme-toggle-btn .icon-moon { display: none; }
     .footer-container { flex-direction: column; gap: 20px; text-align: center; }
 }
 
-/* ปุ่มกดซ้าย-ขวา */
 .carousel-btn {
     position: absolute;
     top: 50%;
@@ -1422,11 +1421,10 @@ html.light-theme .theme-toggle-btn .icon-moon { display: none; }
     align-items: center;
     justify-content: center;
     z-index: 10;
-    opacity: 0; /* ซ่อนไว้ก่อน จะโชว์เมื่อ Hover */
+    opacity: 0; 
     transition: all 0.3s ease;
 }
 
-/* แสดงปุ่มเมื่อเอาเมาส์ไปชี้ที่รูป */
 .auto-carousel-card:hover .carousel-btn {
     opacity: 1;
 }
@@ -1439,7 +1437,6 @@ html.light-theme .theme-toggle-btn .icon-moon { display: none; }
 .prev-btn { left: 12px; }
 .next-btn { right: 12px; }
 
-/* จุด บอกตำแหน่งรูปด้านล่าง */
 .carousel-dots {
     position: absolute;
     bottom: 16px;
@@ -1460,56 +1457,51 @@ html.light-theme .theme-toggle-btn .icon-moon { display: none; }
 }
 
 .dot.active {
-    width: 20px; /* ขยายเป็นแถบยาวเมื่อเลือก */
+    width: 20px; 
     border-radius: 10px;
     background: var(--primary-color, #6366F1);
 }
 
-/* 1. กรอบใหญ่รอบนอก (กำหนดขนาดและสัดส่วนให้สมส่วนเป๊ะๆ) */
 .auto-carousel-card {
-    position: relative;          /* สำคัญมาก! เพื่อเป็นฐานให้รูปมาซ้อนทับ */
+    position: relative;          
     width: 100%;
-    max-width: 500px;            /* กำหนดความกว้างสูงสุด */
-    aspect-ratio: 4 / 5;         /* ล็อกสัดส่วนทรงสูงให้สมส่วน ไม่ยืดไม่เบี้ยว */
+    max-width: 500px;            
+    aspect-ratio: 4 / 5;         
     border-radius: var(--radius-lg, 24px);
-    overflow: hidden;            /* ซ่อนรูปอื่นๆ ที่เกินกรอบ */
+    overflow: hidden;           
     border: 1px solid var(--border-glass);
     box-shadow: var(--shadow-card);
 }
 
-/* 2. สไลด์แต่ละรูป (ซ้อนทับกันที่จุดเดียวกันทั้งหมด) */
 .auto-carousel-card .carousel-slide {
-    position: absolute;          /* ซ้อนทับกันที่ตำแหน่งเดียวกัน */
+    position: absolute;          
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    opacity: 0;                  /* ซ่อนรูปไว้ก่อน */
+    opacity: 0;                 
     visibility: hidden;
-    transition: opacity 0.8s ease-in-out; /* เวลาสลับรูปจะค่อยๆ จางแบบสมูธ */
+    transition: opacity 0.8s ease-in-out; 
     z-index: 1;
 }
 
-/* 3. แสดงเฉพาะรูปที่ได้รับ class "active" */
 .auto-carousel-card .carousel-slide.active {
     opacity: 1;
     visibility: visible;
     z-index: 2;
 }
 
-/* 4. ปรับรูปภายในให้เต็มกรอบแบบไม่เสียสัดส่วน */
 .auto-carousel-card .carousel-slide img {
     width: 100%;
     height: 100%;
-    object-fit: cover;           /* ตัดขอบภาพให้พอดีกรอบอย่างสวยงาม ไม่ยืด/บีบ */
+    object-fit: cover;           
     display: block;
 }
 
-/* 5. ปรับปุ่มซ้าย-ขวา และจุดดอตให้อยู่ด้านบนรูป */
 .carousel-btn {
-    z-index: 10;                 /* ลอยอยู่เหนือรูปภาพ */
+    z-index: 10;                 
 }
 
 .carousel-dots {
-    z-index: 10;                 /* ลอยอยู่เหนือรูปภาพ */
+    z-index: 10;                 
 }
