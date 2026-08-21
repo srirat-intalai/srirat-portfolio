@@ -31,8 +31,8 @@ const i18n = {
 
         "edu.tag": "ACADEMIC JOURNEY", "edu.title": "Education Timeline",
         "edu.item1.title": "Bachelor's Degree, Computer Science", "edu.item1.inst": "Bangkok University",
-        "edu.item1.date": "Year 1 — Present (Year 4)",
-        "edu.item1.desc": "Currently maintaining a cumulative GPA of 3.71, with 115 total credits completed so far.",
+        "edu.item1.date": "Year 1 (2023) — Year 4 (2027)",
+        "edu.item1.desc": "Currently maintaining a cumulative GPA of 3.26, with 115 total credits completed so far.",
         "edu.item2.title": "High School Diploma (Vocational Certificate Equivalent)",
         "edu.item2.inst": "Kusoom Technology Vocational College",
         "edu.item2.date": "Secondary Education",
@@ -101,8 +101,8 @@ const i18n = {
 
         "edu.tag": "เส้นทางการศึกษา", "edu.title": "ไทม์ไลน์การศึกษา",
         "edu.item1.title": "ปริญญาตรี สาขาวิทยาการคอมพิวเตอร์", "edu.item1.inst": "มหาวิทยาลัยกรุงเทพ",
-        "edu.item1.date": "ปี 1 — ปัจจุบัน (ปี 4)",
-        "edu.item1.desc": "ปัจจุบันมีเกรดเฉลี่ยสะสม (Cum GPA.) 3.71 หน่วยกิตสะสมรวม 115 หน่วยกิต",
+        "edu.item1.date": "ปี 1 (2566) — ปี 4 (2570)",
+        "edu.item1.desc": "ปัจจุบันมีเกรดเฉลี่ยสะสม (Cum GPA.) 3.26 หน่วยกิตสะสมรวม 115 หน่วยกิต",
         "edu.item2.title": "มัธยมศึกษาตอนปลาย (เทียบเท่าประกาศนียบัตรวิชาชีพ)",
         "edu.item2.inst": "วิทยาลัยอาชีวศึกษากุสุมภ์เทคโนโลยี",
         "edu.item2.date": "ระดับประกาศนียบัตรวิชาชีพ (ปวช.)",
