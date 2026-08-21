@@ -35,7 +35,7 @@ const i18n = {
         "edu.item1.desc": "Currently maintaining a cumulative GPA of 3.26, with 115 total credits completed so far.",
         "edu.item2.title": "High School Diploma (Vocational Certificate Equivalent)",
         "edu.item2.inst": "Kusoom Technology Vocational College",
-        "edu.item2.date": "Secondary Education",
+        "edu.item2.date": "Secondary Education (2020 - 2023)",
         "edu.item2.desc": "Vocational Certificate in Business Computer GPAX of 3.98.",
 
         "skills.tag": "MY TOOLBOX", "skills.title": "Technical Skills",
