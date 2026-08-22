@@ -16,13 +16,13 @@ const i18n = {
 
         "hero.badge": "HELLO EVERYONE",
         "hero.title": 'I\'m <span class="text-gradient">Srirat Intalai</span>',
-        "hero.subtitle": "Computer Science student interested in Mobile Application Development, Software Testing (QA), and UI/UX Design. Passionate about learning new technologies and currently seeking an internship to gain hands-on experience.",
+        "hero.subtitle": "Computer Science student with a broad foundation across Software Development, QA, Data, and UI/UX — strongest in Mobile App Development, Software Testing (QA), and Data Analysis. Passionate about learning new technologies and currently seeking an internship to gain hands-on experience.",
         "hero.cta1": "View Projects", "hero.cta2": "Contact Me",
         "hero.badge1title": "Mobile Dev", "hero.badge2title": "CS Student", "hero.badge2sub": "Bangkok University",
 
         "about.tag": "GET TO KNOW ME", "about.title": "About Me",
         "about.heading": "School of Information Technology and Innovation, Computer Science.",
-        "about.text": '"How can we build an app that is easy to use, visually appealing, and bug-free?" This question drove me to explore software development from multiple angles—as a Developer who enjoys writing clean code, a UI/UX Designer who cares about user experience, and a QA Tester with an eye for detail. As a Computer Science student at Bangkok University, I am always eager to learn new technologies and am currently looking for an internship opportunity to help turn great ideas into real, working applications.',
+        "about.text": '"How can we build an app that is easy to use, visually appealing, and bug-free?" This question drove me to explore software development from multiple angles—as a Developer who enjoys writing clean code, a UI/UX Designer who cares about user experience, a QA Tester with an eye for detail, and increasingly a Data-minded thinker who likes turning raw numbers into insight with SQL, Python, and Power BI. As a Computer Science student at Bangkok University, I am always eager to learn new technologies and am currently looking for an internship opportunity — in Mobile Development, QA, Data, or UI/UX — to help turn great ideas into real, working applications.',
         "about.label.fullname": "Full Name", "about.value.fullname": "Srirat Intalai (Yok)",
         "about.label.email": "Email", "about.label.phone": "Phone",
         "about.label.university": "University", "about.value.university": "Bangkok University",
@@ -42,6 +42,8 @@ const i18n = {
         "skills.cat1": "Programming Languages", "skills.cat2": "Mobile Development",
         "skills.cat3": "Software Testing (QA)", "skills.cat4": "UI/UX Design",
         "skills.cat5": "Databases & APIs", "skills.cat6": "Tools & Technologies",
+        "skills.cat7": "Data Analysis", "skills.cat8": "Data Engineering",
+        "skills.cat9": "System Analysis", "skills.cat10": "Cloud & DevOps",
 
         "proj.tag": "PORTFOLIO WORK", "proj.title": "Featured Projects",
         "proj.pawhaus.desc": "Pet Care & Smart Home Mobile Application Role: Main Developer,An all-in-one mobile application designed for pet owners and smart home management. Developed cross-platform using Flutter, taking full responsibility for the primary codebase and core features. Integrated with Home Assistant for smart device simulation, managed real-time user data, and implemented clean state management using Provider.",
@@ -62,18 +64,13 @@ const i18n = {
         "act2.desc": "Took part in the Industry-driven Innovation Project, visiting True Digital Group to learn how a real company structures its technology operations, see how digital and AI technologies are applied in business, and gather requirements directly from the team behind the project brief.",
         "act3.badge": "Seminar",
         "act3.desc": "Selected by company representatives and faculty to showcase the Computer Science Project I coursework (Synapse Home) at this annual technology and AI event hosted by the Faculty of Information Technology and Innovation, Bangkok University.",
-        "act4.badge": "Seminar",
-        "act4.desc": "Attended a seminar by Natthee Rujirachaiwet, SVP of Information Technology Management at Ngern Tid Lor PCL, on applying Agile and Scrum practices to real business contexts — hosted by the Department of Computer Science and Information Technology, Bangkok University.",
-        "act5.badge": "Workshop",
-        "act5.desc": "Took part as one of 30 first-year students in this Python programming event: an inspirational morning session with guest speakers from Huawei Thailand and PyCon Thailand, followed by a hands-on Python data-analysis workshop and a mini-hackathon in teams of 6, presenting data insights to peer mentors.",
-
-        "stats.certs": "Certificates", "stats.projects": "Projects",
-        "stats.activities": "Activities", "stats.gpa": "GPA",
-
-        "filter.all": "All", "filter.cyber": "Cybersecurity",
+        "act4.badge": "Workshop",
+        "act4.desc": "Attended a hands-on Agile/Scrum training session led by the SVP of Information Technology Management at Ngern Tid Lor PCL, covering how Scrum and IT practices are applied to real business problems.",
+        "act5.badge": "Hackathon",
+        "act5.desc": "Took part in a Python data-analysis workshop and mini-hackathon organized with speakers from Huawei Thailand and PyCon Thailand, then worked in a team to analyze a dataset and present data insights.",
 
         "contact.tag": "LET'S CONNECT", "contact.title": "Contact Me", "contact.heading": "Get in Touch",
-        "contact.subtext": "Currently seeking an internship / cooperative education placement to gain hands-on experience in Mobile Application Development, Software Testing (QA), or UI/UX Design.",
+        "contact.subtext": "Currently seeking an internship / cooperative education placement to gain hands-on experience in Mobile Application Development, Software Testing (QA), Data Analysis, or UI/UX Design.",
         "contact.label.email": "Email", "contact.label.phone": "Phone",
         "contact.label.github": "GitHub", "contact.label.linkedin": "LinkedIn",
         "contact.form.name": "Your Name", "contact.form.namePh": "Sam Smith",
@@ -95,13 +92,13 @@ const i18n = {
 
         "hero.badge": "สวัสดีค่ะ",
         "hero.title": '<span class="text-gradient">ศรีรัตน์ อินทลัย</span>',
-        "hero.subtitle": "เป็นนักศึกษาสาขาวิทยาการคอมพิวเตอร์ มีความสนใจด้านการพัฒนาแอปพลิเคชัน การทดสอบซอฟต์แวร์(QA) และการออกแบบ UI/UX ชอบเรียนรู้เทคโนโลยีใหม่ ๆ และกำลังมองหาโอกาสฝึกงานเพื่อพัฒนาทักษะ พร้อมนำความรู้ที่ได้จากการเรียนไปประยุกต์ใช้ในการทำงานจริง",
+        "hero.subtitle": "นักศึกษาวิทยาการคอมพิวเตอร์ที่มีพื้นฐานกว้างครอบคลุมทั้ง Software Development, QA, Data และ UI/UX โดยมีจุดแข็งด้านการพัฒนาแอปพลิเคชันมือถือ การทดสอบซอฟต์แวร์ (QA) และการวิเคราะห์ข้อมูล ชอบเรียนรู้เทคโนโลยีใหม่ ๆ และกำลังมองหาโอกาสฝึกงานเพื่อพัฒนาทักษะ พร้อมนำความรู้ที่ได้จากการเรียนไปประยุกต์ใช้ในการทำงานจริง",
         "hero.cta1": "ดูผลงาน", "hero.cta2": "ช่องทางติดต่อ",
         "hero.badge1title": "นักพัฒนาแอปมือถือ", "hero.badge2title": "นักศึกษา วท.บ.", "hero.badge2sub": "มหาวิทยาลัยกรุงเทพ",
 
         "about.tag": "Get to know me", "about.title": "ทำความรู้จักกันมากขึ้น",
         "about.heading": "นักศึกษาคณะเทคโนโลยีสารสนเทศและนวัตกรรม สาขาวิทยาการคอมพิวเตอร์",
-        "about.text": '"ทำอย่างไรให้แอปพลิเคชันทั้งใช้งานง่าย สวย และไม่มี Bug?" คำถามนี้ทำให้สนุกกับการเรียนรู้การพัฒนาซอฟต์แวร์แบบครบวงจร—ทั้งในมุมของ Developer ที่ชอบลงมือเขียนโค้ด, UI/UX Designer ที่ใส่ใจความรู้สึกและประสบการณ์ของผู้ใช้ และ QA Tester เก็บรายละเอียดเพื่อให้ได้ผลลัพธ์ที่ดีที่สุด ในฐานะนักศึกษาวิทยาการคอมพิวเตอร์ ม.กรุงเทพ พร้อมเปิดรับเทคโนโลยีใหม่ๆ เสมอ และกำลังมองหาโอกาสฝึกงานเพื่อร่วมเปลี่ยนไอเดียให้กลายเป็นแอปพลิเคชันที่ใช้งานได้จริงค่ะ',
+        "about.text": '"ทำอย่างไรให้แอปพลิเคชันทั้งใช้งานง่าย สวย และไม่มี Bug?" คำถามนี้ทำให้สนุกกับการเรียนรู้การพัฒนาซอฟต์แวร์แบบครบวงจร—ทั้งในมุมของ Developer ที่ชอบลงมือเขียนโค้ด, UI/UX Designer ที่ใส่ใจความรู้สึกและประสบการณ์ของผู้ใช้, QA Tester เก็บรายละเอียดเพื่อให้ได้ผลลัพธ์ที่ดีที่สุด และล่าสุดเริ่มสนใจมุมของ Data โดยใช้ SQL, Python และ Power BI แปลงตัวเลขดิบให้กลายเป็น Insight ในฐานะนักศึกษาวิทยาการคอมพิวเตอร์ ม.กรุงเทพ พร้อมเปิดรับเทคโนโลยีใหม่ๆ เสมอ และกำลังมองหาโอกาสฝึกงานทั้งสาย Mobile Development, QA, Data หรือ UI/UX เพื่อร่วมเปลี่ยนไอเดียให้กลายเป็นแอปพลิเคชันที่ใช้งานได้จริงค่ะ',
         "about.label.fullname": "ชื่อ-นามสกุล", "about.value.fullname": "ศรีรัตน์ อินทลัย (หยก)",
         "about.label.email": "อีเมล", "about.label.phone": "เบอร์โทรศัพท์",
         "about.label.university": "มหาวิทยาลัย", "about.value.university": "มหาวิทยาลัยกรุงเทพ",
@@ -121,6 +118,8 @@ const i18n = {
         "skills.cat1": "ภาษาโปรแกรม", "skills.cat2": "การพัฒนาแอปพลิเคชันมือถือ",
         "skills.cat3": "การทดสอบซอฟต์แวร์ (QA)", "skills.cat4": "การออกแบบ UI/UX",
         "skills.cat5": "ฐานข้อมูลและ API", "skills.cat6": "เครื่องมือและเทคโนโลยี",
+        "skills.cat7": "การวิเคราะห์ข้อมูล (Data Analysis)", "skills.cat8": "วิศวกรรมข้อมูล (Data Engineering)",
+        "skills.cat9": "การวิเคราะห์ระบบ (System Analysis)", "skills.cat10": "Cloud & DevOps",
 
         "proj.tag": "ผลงานที่ผ่านมา", "proj.title": "ผลงานเด่น",
         "proj.pawhaus.desc": "Pet Care & Smart Home Mobile Application ตำแหน่ง: นักพัฒนาหลัก (Main Developer) แอปพลิเคชันมือถือแบบ All-in-One สำหรับคนรักสัตว์เลี้ยงและดูแลบ้านครบจบในแอปเดียว พัฒนาขึ้นด้วย Flutter โดยรับผิดชอบการเขียนโค้ดและพัฒนาฟีเจอร์หลักทั้งหมดของโปรเจกต์ โดดเด่นด้วยการเชื่อมต่อระบบจำลองอุปกรณ์ Smart Home ผ่าน Home Assistant ควบคู่กับการจัดการข้อมูลผู้ใช้แบบ Real-time และบริหารจัดการ State ของแอปพลิเคชันอย่างมีประสิทธิภาพด้วย Provider",
@@ -141,18 +140,13 @@ const i18n = {
         "act2.desc": "เข้าร่วมโครงการ Industry-driven Innovation Project โดยไปศึกษาดูงานที่ True Digital Group เพื่อเรียนรู้โครงสร้างการดำเนินงานด้านเทคโนโลยีขององค์กรจริง เห็นการประยุกต์ใช้เทคโนโลยีดิจิทัลและ AI ในธุรกิจ และเก็บข้อมูลความต้องการโดยตรงจากทีมงานเจ้าของโจทย์",
         "act3.badge": "งานสัมมนา",
         "act3.desc": "ได้รับคัดเลือกจากตัวแทนบริษัทและอาจารย์ให้นำผลงานรายวิชา Computer Science Project I (Synapse Home) มาจัดแสดงในงานเทคโนโลยีและ AI ประจำปีนี้ จัดโดยคณะเทคโนโลยีสารสนเทศและนวัตกรรม มหาวิทยาลัยกรุงเทพ",
-        "act4.badge": "งานสัมมนา",
-        "act4.desc": "เข้าร่วมงานสัมมนา \"NEXTGEN AGILITY: IT & Scrum for Business Era\" โดยคุณณัฐธีร์ รุจิระชัยเวทย์ SVP Information Technology Management บริษัท เงินติดล้อ จำกัด (มหาชน) ในหัวข้อการประยุกต์ใช้ Agile และ Scrum กับการทำงานจริง จัดโดยภาควิชาวิทยาการคอมพิวเตอร์และเทคโนโลยีสารสนเทศ มหาวิทยาลัยกรุงเทพ",
-        "act5.badge": "เวิร์กช็อป",
-        "act5.desc": "เข้าร่วมเป็นหนึ่งใน 30 นักศึกษาปี 1 ในกิจกรรม Python Developer Pathway (บทที่ 1: สร้างแรงบันดาลใจ) ฟังบรรยายสร้างแรงบันดาลใจจากวิทยากรรับเชิญจาก Huawei Thailand และ PyCon Thailand ในช่วงเช้า จากนั้นลงมือทำ Workshop วิเคราะห์ข้อมูลด้วยภาษา Python และทำ Mini Hackathon เป็นกลุ่ม 6 คน นำเสนอ Insight ของข้อมูลให้กับรุ่นพี่ที่ปรึกษา",
-
-        "stats.certs": "ใบรับรอง", "stats.projects": "โปรเจกต์",
-        "stats.activities": "กิจกรรม", "stats.gpa": "เกรดเฉลี่ย",
-
-        "filter.all": "ทั้งหมด", "filter.cyber": "ไซเบอร์ซีเคียวริตี้",
+        "act4.badge": "เวิร์กชอป",
+        "act4.desc": "เข้าร่วมอบรมเชิงปฏิบัติการด้าน Agile/Scrum ภายใต้โครงการ NEXTGEN AGILITY: IT & Scrum for Business Era โดยวิทยากรคือ SVP Information Technology Management บริษัท เงินติดล้อ จำกัด (มหาชน) เรียนรู้การนำแนวคิด Scrum และ IT มาประยุกต์ใช้แก้ปัญหาทางธุรกิจจริง",
+        "act5.badge": "แฮกกาธอน",
+        "act5.desc": "เข้าร่วมกิจกรรม Python Developer Pathway (The First Chapter: Be Inspired) เวิร์กชอปวิเคราะห์ข้อมูลด้วยภาษา Python และ Mini Hackathon ร่วมกับวิทยากรจาก Huawei Thailand และ PyCon Thailand โดยทำงานเป็นทีมเพื่อวิเคราะห์ข้อมูลและนำเสนอ Insight",
 
         "contact.tag": "มาติดต่อกัน", "contact.title": "ช่องทางติดต่อ", "contact.heading": "ติดต่อได้เลย",
-        "contact.subtext": "ปัจจุบันกำลังมองหาโอกาสฝึกงาน หรือสหกิจศึกษา เพื่อสั่งสมประสบการณ์จริงด้านการพัฒนาแอปพลิเคชันมือถือ การทดสอบซอฟต์แวร์ (QA) หรือการออกแบบ UI/UX",
+        "contact.subtext": "ปัจจุบันกำลังมองหาโอกาสฝึกงาน หรือสหกิจศึกษา เพื่อสั่งสมประสบการณ์จริงด้านการพัฒนาแอปพลิเคชันมือถือ การทดสอบซอฟต์แวร์ (QA) การวิเคราะห์ข้อมูล หรือการออกแบบ UI/UX",
         "contact.label.email": "อีเมล", "contact.label.phone": "เบอร์โทรศัพท์",
         "contact.label.github": "GitHub", "contact.label.linkedin": "LinkedIn",
         "contact.form.name": "ชื่อของคุณ", "contact.form.namePh": "สมชาย มีสุข",
@@ -428,83 +422,6 @@ document.addEventListener('DOMContentLoaded', () => {
         if (e.key === 'Escape' && modal?.classList.contains('active')) {
             closeModal();
         }
-    });
-
-    /* ------------------------------------------------------------------------
-       7b. Quick Stats Bar — count-up animation
-       ------------------------------------------------------------------------ */
-    const statNumbers = document.querySelectorAll('.stat-number');
-
-    function animateCount(el) {
-        const target = parseFloat(el.getAttribute('data-count'));
-        const isDecimal = el.getAttribute('data-decimal') === 'true';
-        const duration = 1200;
-        const startTime = performance.now();
-
-        function step(now) {
-            const progress = Math.min((now - startTime) / duration, 1);
-            const eased = 1 - Math.pow(1 - progress, 3); // ease-out cubic
-            const current = target * eased;
-            el.textContent = isDecimal ? current.toFixed(2) : Math.round(current);
-            if (progress < 1) requestAnimationFrame(step);
-            else el.textContent = isDecimal ? target.toFixed(2) : target;
-        }
-        requestAnimationFrame(step);
-    }
-
-    if (statNumbers.length) {
-        const statsObserver = new IntersectionObserver((entries, observer) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    animateCount(entry.target);
-                    observer.unobserve(entry.target);
-                }
-            });
-        }, { threshold: 0.5 });
-
-        statNumbers.forEach(el => statsObserver.observe(el));
-    }
-
-    /* ------------------------------------------------------------------------
-       7c. Certificate Filter Tabs
-       ------------------------------------------------------------------------ */
-    const filterTabs = document.querySelectorAll('.filter-tab');
-
-    filterTabs.forEach(tab => {
-        tab.addEventListener('click', () => {
-            const filter = tab.getAttribute('data-filter');
-
-            filterTabs.forEach(t => t.classList.remove('active'));
-            tab.classList.add('active');
-
-            certCards.forEach(card => {
-                const category = card.getAttribute('data-category');
-                const show = filter === 'all' || category === filter;
-                card.classList.toggle('filtered-out', !show);
-            });
-        });
-    });
-
-    /* ------------------------------------------------------------------------
-       7d. Synapse Home — Project Gallery Thumbnails
-       ------------------------------------------------------------------------ */
-    const synapseMainImage = document.getElementById('synapse-main-image');
-    const galleryThumbs = document.querySelectorAll('.gallery-thumb');
-
-    galleryThumbs.forEach(thumb => {
-        thumb.addEventListener('click', () => {
-            const newSrc = thumb.getAttribute('data-img');
-            if (!synapseMainImage || !newSrc) return;
-
-            synapseMainImage.style.opacity = '0';
-            setTimeout(() => {
-                synapseMainImage.src = newSrc;
-                synapseMainImage.style.opacity = '1';
-            }, 150);
-
-            galleryThumbs.forEach(t => t.classList.remove('active'));
-            thumb.classList.add('active');
-        });
     });
 
     /* ------------------------------------------------------------------------
