@@ -62,6 +62,15 @@ const i18n = {
         "act2.desc": "Took part in the Industry-driven Innovation Project, visiting True Digital Group to learn how a real company structures its technology operations, see how digital and AI technologies are applied in business, and gather requirements directly from the team behind the project brief.",
         "act3.badge": "Seminar",
         "act3.desc": "Selected by company representatives and faculty to showcase the Computer Science Project I coursework (Synapse Home) at this annual technology and AI event hosted by the Faculty of Information Technology and Innovation, Bangkok University.",
+        "act4.badge": "Seminar",
+        "act4.desc": "Attended a seminar by Natthee Rujirachaiwet, SVP of Information Technology Management at Ngern Tid Lor PCL, on applying Agile and Scrum practices to real business contexts — hosted by the Department of Computer Science and Information Technology, Bangkok University.",
+        "act5.badge": "Workshop",
+        "act5.desc": "Took part as one of 30 first-year students in this Python programming event: an inspirational morning session with guest speakers from Huawei Thailand and PyCon Thailand, followed by a hands-on Python data-analysis workshop and a mini-hackathon in teams of 6, presenting data insights to peer mentors.",
+
+        "stats.certs": "Certificates", "stats.projects": "Projects",
+        "stats.activities": "Activities", "stats.gpa": "GPA",
+
+        "filter.all": "All", "filter.cyber": "Cybersecurity",
 
         "contact.tag": "LET'S CONNECT", "contact.title": "Contact Me", "contact.heading": "Get in Touch",
         "contact.subtext": "Currently seeking an internship / cooperative education placement to gain hands-on experience in Mobile Application Development, Software Testing (QA), or UI/UX Design.",
@@ -132,6 +141,15 @@ const i18n = {
         "act2.desc": "เข้าร่วมโครงการ Industry-driven Innovation Project โดยไปศึกษาดูงานที่ True Digital Group เพื่อเรียนรู้โครงสร้างการดำเนินงานด้านเทคโนโลยีขององค์กรจริง เห็นการประยุกต์ใช้เทคโนโลยีดิจิทัลและ AI ในธุรกิจ และเก็บข้อมูลความต้องการโดยตรงจากทีมงานเจ้าของโจทย์",
         "act3.badge": "งานสัมมนา",
         "act3.desc": "ได้รับคัดเลือกจากตัวแทนบริษัทและอาจารย์ให้นำผลงานรายวิชา Computer Science Project I (Synapse Home) มาจัดแสดงในงานเทคโนโลยีและ AI ประจำปีนี้ จัดโดยคณะเทคโนโลยีสารสนเทศและนวัตกรรม มหาวิทยาลัยกรุงเทพ",
+        "act4.badge": "งานสัมมนา",
+        "act4.desc": "เข้าร่วมงานสัมมนา \"NEXTGEN AGILITY: IT & Scrum for Business Era\" โดยคุณณัฐธีร์ รุจิระชัยเวทย์ SVP Information Technology Management บริษัท เงินติดล้อ จำกัด (มหาชน) ในหัวข้อการประยุกต์ใช้ Agile และ Scrum กับการทำงานจริง จัดโดยภาควิชาวิทยาการคอมพิวเตอร์และเทคโนโลยีสารสนเทศ มหาวิทยาลัยกรุงเทพ",
+        "act5.badge": "เวิร์กช็อป",
+        "act5.desc": "เข้าร่วมเป็นหนึ่งใน 30 นักศึกษาปี 1 ในกิจกรรม Python Developer Pathway (บทที่ 1: สร้างแรงบันดาลใจ) ฟังบรรยายสร้างแรงบันดาลใจจากวิทยากรรับเชิญจาก Huawei Thailand และ PyCon Thailand ในช่วงเช้า จากนั้นลงมือทำ Workshop วิเคราะห์ข้อมูลด้วยภาษา Python และทำ Mini Hackathon เป็นกลุ่ม 6 คน นำเสนอ Insight ของข้อมูลให้กับรุ่นพี่ที่ปรึกษา",
+
+        "stats.certs": "ใบรับรอง", "stats.projects": "โปรเจกต์",
+        "stats.activities": "กิจกรรม", "stats.gpa": "เกรดเฉลี่ย",
+
+        "filter.all": "ทั้งหมด", "filter.cyber": "ไซเบอร์ซีเคียวริตี้",
 
         "contact.tag": "มาติดต่อกัน", "contact.title": "ช่องทางติดต่อ", "contact.heading": "ติดต่อได้เลย",
         "contact.subtext": "ปัจจุบันกำลังมองหาโอกาสฝึกงาน หรือสหกิจศึกษา เพื่อสั่งสมประสบการณ์จริงด้านการพัฒนาแอปพลิเคชันมือถือ การทดสอบซอฟต์แวร์ (QA) หรือการออกแบบ UI/UX",
@@ -413,6 +431,83 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     /* ------------------------------------------------------------------------
+       7b. Quick Stats Bar — count-up animation
+       ------------------------------------------------------------------------ */
+    const statNumbers = document.querySelectorAll('.stat-number');
+
+    function animateCount(el) {
+        const target = parseFloat(el.getAttribute('data-count'));
+        const isDecimal = el.getAttribute('data-decimal') === 'true';
+        const duration = 1200;
+        const startTime = performance.now();
+
+        function step(now) {
+            const progress = Math.min((now - startTime) / duration, 1);
+            const eased = 1 - Math.pow(1 - progress, 3); // ease-out cubic
+            const current = target * eased;
+            el.textContent = isDecimal ? current.toFixed(2) : Math.round(current);
+            if (progress < 1) requestAnimationFrame(step);
+            else el.textContent = isDecimal ? target.toFixed(2) : target;
+        }
+        requestAnimationFrame(step);
+    }
+
+    if (statNumbers.length) {
+        const statsObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateCount(entry.target);
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        statNumbers.forEach(el => statsObserver.observe(el));
+    }
+
+    /* ------------------------------------------------------------------------
+       7c. Certificate Filter Tabs
+       ------------------------------------------------------------------------ */
+    const filterTabs = document.querySelectorAll('.filter-tab');
+
+    filterTabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+            const filter = tab.getAttribute('data-filter');
+
+            filterTabs.forEach(t => t.classList.remove('active'));
+            tab.classList.add('active');
+
+            certCards.forEach(card => {
+                const category = card.getAttribute('data-category');
+                const show = filter === 'all' || category === filter;
+                card.classList.toggle('filtered-out', !show);
+            });
+        });
+    });
+
+    /* ------------------------------------------------------------------------
+       7d. Synapse Home — Project Gallery Thumbnails
+       ------------------------------------------------------------------------ */
+    const synapseMainImage = document.getElementById('synapse-main-image');
+    const galleryThumbs = document.querySelectorAll('.gallery-thumb');
+
+    galleryThumbs.forEach(thumb => {
+        thumb.addEventListener('click', () => {
+            const newSrc = thumb.getAttribute('data-img');
+            if (!synapseMainImage || !newSrc) return;
+
+            synapseMainImage.style.opacity = '0';
+            setTimeout(() => {
+                synapseMainImage.src = newSrc;
+                synapseMainImage.style.opacity = '1';
+            }, 150);
+
+            galleryThumbs.forEach(t => t.classList.remove('active'));
+            thumb.classList.add('active');
+        });
+    });
+
+    /* ------------------------------------------------------------------------
        8. Contact Form Client-Side Validation
        ------------------------------------------------------------------------ */
     const contactForm = document.getElementById('contact-form');
@@ -520,4 +615,3 @@ document.addEventListener("DOMContentLoaded", () => {
 
     startTimer();
 });
-

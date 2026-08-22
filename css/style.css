@@ -306,6 +306,147 @@ button, input, textarea {
 }
 
 /* --------------------------------------------------------------------------
+   5b. Quick Stats Bar
+   -------------------------------------------------------------------------- */
+.stats-bar-section {
+    padding: 0 24px 80px;
+}
+
+.stats-bar {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    background: var(--surface-glass);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid var(--border-glass);
+    border-radius: var(--radius-lg);
+    padding: 32px 24px;
+}
+
+.stat-item {
+    text-align: center;
+    position: relative;
+}
+
+.stat-item:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    top: 10%;
+    right: -10px;
+    height: 80%;
+    width: 1px;
+    background: var(--border-glass);
+}
+
+.stat-number {
+    display: block;
+    font-size: 2.4rem;
+    font-weight: 800;
+    line-height: 1.1;
+    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.stat-label {
+    display: block;
+    margin-top: 6px;
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+@media (max-width: 700px) {
+    .stats-bar { grid-template-columns: repeat(2, 1fr); row-gap: 28px; }
+    .stat-item:nth-child(2)::after { display: none; }
+}
+
+/* --------------------------------------------------------------------------
+   5c. Certificate Filter Tabs
+   -------------------------------------------------------------------------- */
+.cert-filter-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 40px;
+}
+
+.filter-tab {
+    font-family: inherit;
+    font-size: 0.85rem;
+    font-weight: 600;
+    padding: 9px 20px;
+    border-radius: var(--radius-full);
+    border: 1px solid var(--border-glass);
+    background: var(--surface-glass);
+    color: var(--text-muted);
+    cursor: pointer;
+    transition: all var(--transition-fast);
+}
+
+.filter-tab:hover {
+    border-color: var(--border-glass-bright);
+    color: var(--text-primary);
+}
+
+.filter-tab.active {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    border-color: transparent;
+    color: #FFFFFF;
+}
+
+.cert-card.filtered-out {
+    display: none;
+}
+
+/* --------------------------------------------------------------------------
+   5d. Project Image Gallery (Synapse Home)
+   -------------------------------------------------------------------------- */
+.gallery-thumbs {
+    position: absolute;
+    bottom: 12px;
+    left: 12px;
+    right: 12px;
+    display: flex;
+    gap: 8px;
+    z-index: 2;
+}
+
+.gallery-thumb {
+    flex: 1;
+    padding: 0;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 2px solid rgba(255, 255, 255, 0.35);
+    cursor: pointer;
+    background: none;
+    aspect-ratio: 16/10;
+    transition: border-color var(--transition-fast), transform var(--transition-fast);
+}
+
+.gallery-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.gallery-thumb:hover {
+    transform: translateY(-2px);
+}
+
+.gallery-thumb.active {
+    border-color: var(--accent-color);
+}
+
+/* --------------------------------------------------------------------------
    6. Navigation Bar
    -------------------------------------------------------------------------- */
 .header {
@@ -834,7 +975,7 @@ html.light-theme .theme-toggle-btn .icon-moon { display: none; }
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: transform var(--transition-slow);
+    transition: transform var(--transition-slow), opacity 0.15s ease;
 }
 
 .project-card:hover .project-image {
