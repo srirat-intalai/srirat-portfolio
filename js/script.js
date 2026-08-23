@@ -16,13 +16,13 @@ const i18n = {
 
         "hero.badge": "HELLO EVERYONE",
         "hero.title": 'I\'m <span class="text-gradient">Srirat Intalai</span>',
-        "hero.subtitle": "Computer Science student with a broad foundation across Software Development, QA, Data, and UI/UX — strongest in Mobile App Development, Software Testing (QA), and Data Analysis. Passionate about learning new technologies and currently seeking an internship to gain hands-on experience.",
+        "hero.subtitle": "Computer Science student interested in Software Development, QA, Data, and UI/UX, with a focus on Mobile App Development, Software Testing, and Data Analysis. I enjoy learning new technologies and am currently seeking an internship to gain hands-on experience and develop my skills.",
         "hero.cta1": "View Projects", "hero.cta2": "Contact Me",
         "hero.badge1title": "Mobile Dev", "hero.badge2title": "CS Student", "hero.badge2sub": "Bangkok University",
 
         "about.tag": "GET TO KNOW ME", "about.title": "About Me",
         "about.heading": "School of Information Technology and Innovation, Computer Science.",
-        "about.text": '"How can we build an app that is easy to use, visually appealing, and bug-free?" This question drove me to explore software development from multiple angles—as a Developer who enjoys writing clean code, a UI/UX Designer who cares about user experience, a QA Tester with an eye for detail, and increasingly a Data-minded thinker who likes turning raw numbers into insight with SQL, Python, and Power BI. As a Computer Science student at Bangkok University, I am always eager to learn new technologies and am currently looking for an internship opportunity — in Mobile Development, QA, Data, or UI/UX — to help turn great ideas into real, working applications.',
+        "about.text": '“How can I make an app easy to use, visually appealing, and bug-free?” This question motivates me to keep learning and improving my software development skills through coding, UI/UX design, and QA testing. I’m also interested in Data, using SQL, Python, and Power BI to turn data into useful insights. As a Computer Science student at Bangkok University, I enjoy learning new things and am currently looking for an internship opportunity in Mobile Development, QA, Data, or UI/UX to apply my skills to real-world projects.',
         "about.label.fullname": "Full Name", "about.value.fullname": "Srirat Intalai (Yok)",
         "about.label.email": "Email", "about.label.phone": "Phone",
         "about.label.university": "University", "about.value.university": "Bangkok University",
@@ -32,11 +32,11 @@ const i18n = {
         "edu.tag": "ACADEMIC JOURNEY", "edu.title": "Education Timeline",
         "edu.item1.title": "Bachelor's Degree, Computer Science", "edu.item1.inst": "Bangkok University",
         "edu.item1.date": "Year 1 (2023) — Year 4 (2027)",
-        "edu.item1.desc": "Currently maintaining a cumulative GPA of 3.26, with 115 total credits completed so far.",
-        "edu.item2.title": "High School Diploma (Vocational Certificate Equivalent)",
+        "edu.item1.desc": "Currently maintaining a cumulative GPA of 3.26, with 115 credits completed.",
+        "edu.item2.title": "Vocational Certificate (Equivalent to High School)",
         "edu.item2.inst": "Kusoom Technology Vocational College",
-        "edu.item2.date": "Secondary Education (2020 - 2023)",
-        "edu.item2.desc": "Vocational Certificate in Business Computer GPAX of 3.98.",
+        "edu.item2.date": "Academic year 2020 - 2023",
+        "edu.item2.desc": "Vocational Certificate in Business Computer with a GPAX of 3.98.",
 
         "skills.tag": "MY TOOLBOX", "skills.title": "Technical Skills",
         "skills.cat1": "Programming Languages", "skills.cat2": "Mobile Development",
@@ -93,26 +93,26 @@ const i18n = {
 
         "hero.badge": "สวัสดีค่ะ",
         "hero.title": '<span class="text-gradient">ศรีรัตน์ อินทลัย</span>',
-        "hero.subtitle": "นักศึกษาวิทยาการคอมพิวเตอร์ที่มีพื้นฐานกว้างครอบคลุมทั้ง Software Development, QA, Data และ UI/UX โดยมีจุดแข็งด้านการพัฒนาแอปพลิเคชันมือถือ การทดสอบซอฟต์แวร์ (QA) และการวิเคราะห์ข้อมูล ชอบเรียนรู้เทคโนโลยีใหม่ ๆ และกำลังมองหาโอกาสฝึกงานเพื่อพัฒนาทักษะ พร้อมนำความรู้ที่ได้จากการเรียนไปประยุกต์ใช้ในการทำงานจริง",
+        "hero.subtitle": "นักศึกษาวิทยาการคอมพิวเตอร์ที่สนใจด้าน Software Development, QA, Data และ UI/UX โดยเน้นการพัฒนาแอปพลิเคชันมือถือ การทดสอบซอฟต์แวร์ และการวิเคราะห์ข้อมูล ชอบเรียนรู้เทคโนโลยีใหม่ ๆ และกำลังมองหาโอกาสฝึกงานเพื่อเพิ่มประสบการณ์จากการทำงานจริงและพัฒนาทักษะของตัวเอง",
         "hero.cta1": "ดูผลงาน", "hero.cta2": "ช่องทางติดต่อ",
         "hero.badge1title": "นักพัฒนาแอปมือถือ", "hero.badge2title": "นักศึกษา วท.บ.", "hero.badge2sub": "มหาวิทยาลัยกรุงเทพ",
 
         "about.tag": "Get to know me", "about.title": "ทำความรู้จักกันมากขึ้น",
         "about.heading": "นักศึกษาคณะเทคโนโลยีสารสนเทศและนวัตกรรม สาขาวิทยาการคอมพิวเตอร์",
-        "about.text": '"ทำอย่างไรให้แอปพลิเคชันทั้งใช้งานง่าย สวย และไม่มี Bug?" คำถามนี้ทำให้สนุกกับการเรียนรู้การพัฒนาซอฟต์แวร์แบบครบวงจร—ทั้งในมุมของ Developer ที่ชอบลงมือเขียนโค้ด, UI/UX Designer ที่ใส่ใจความรู้สึกและประสบการณ์ของผู้ใช้, QA Tester เก็บรายละเอียดเพื่อให้ได้ผลลัพธ์ที่ดีที่สุด และล่าสุดเริ่มสนใจมุมของ Data โดยใช้ SQL, Python และ Power BI แปลงตัวเลขดิบให้กลายเป็น Insight ในฐานะนักศึกษาวิทยาการคอมพิวเตอร์ ม.กรุงเทพ พร้อมเปิดรับเทคโนโลยีใหม่ๆ เสมอ และกำลังมองหาโอกาสฝึกงานทั้งสาย Mobile Development, QA, Data หรือ UI/UX เพื่อร่วมเปลี่ยนไอเดียให้กลายเป็นแอปพลิเคชันที่ใช้งานได้จริงค่ะ',
+        "about.text": '“ทำยังไงให้แอปใช้งานง่าย สวย และไม่มี Bug?” เป็นคำถามที่ทำให้อยากเรียนรู้และพัฒนาซอฟต์แวร์ให้ดีขึ้น ทั้งการเขียนโค้ด ออกแบบ UI/UX และทดสอบ QA รวมถึงสนใจด้าน Data โดยใช้ SQL, Python และ Power BI เพื่อเปลี่ยนข้อมูลให้เป็น Insight ในฐานะนักศึกษาวิทยาการคอมพิวเตอร์ มหาวิทยาลัยกรุงเทพ ที่ชอบเรียนรู้สิ่งใหม่ ๆ และกำลังมองหาโอกาสฝึกงานด้าน Mobile Development, QA, Data หรือ UI/UX เพื่อได้ใช้ความรู้กับงานจริงค่ะ',
         "about.label.fullname": "ชื่อ-นามสกุล", "about.value.fullname": "ศรีรัตน์ อินทลัย (หยก)",
         "about.label.email": "อีเมล", "about.label.phone": "เบอร์โทรศัพท์",
         "about.label.university": "มหาวิทยาลัย", "about.value.university": "มหาวิทยาลัยกรุงเทพ",
         "about.label.location": "ที่อยู่", "about.value.location": "กรุงเทพมหานคร ประเทศไทย",
         "about.label.languages": "ภาษา", "about.value.languages": "ไทย (เจ้าของภาษา), อังกฤษ (ระดับพื้นฐาน)",
 
-        "edu.tag": "เส้นทางการศึกษา", "edu.title": "ไทม์ไลน์การศึกษา",
+        "edu.tag": "การศึกษา", "edu.title": "ไทม์ไลน์การศึกษา",
         "edu.item1.title": "ปริญญาตรี สาขาวิทยาการคอมพิวเตอร์", "edu.item1.inst": "มหาวิทยาลัยกรุงเทพ",
         "edu.item1.date": "ปี 1 (2566) — ปี 4 (2570)",
         "edu.item1.desc": "ปัจจุบันมีเกรดเฉลี่ยสะสม (Cum GPA.) 3.26 หน่วยกิตสะสมรวม 115 หน่วยกิต",
-        "edu.item2.title": "มัธยมศึกษาตอนปลาย (เทียบเท่าประกาศนียบัตรวิชาชีพ)",
+        "edu.item2.title": "ประกาศนียบัตรวิชาชีพ (ปวช.) เทียบเท่ามัธยมศึกษาตอนปลาย",
         "edu.item2.inst": "วิทยาลัยอาชีวศึกษากุสุมภ์เทคโนโลยี",
-        "edu.item2.date": "ระดับประกาศนียบัตรวิชาชีพ (ปวช.)",
+        "edu.item2.date": "ปีการศึกษา 2563 - 2566",
         "edu.item2.desc": "ประกาศนียบัตรวิชาชีพด้านคอมพิวเตอร์ธุรกิจ คะแนนเฉลี่ยสะสม 3.98",
 
         "skills.tag": "เครื่องมือ", "skills.title": "ทักษะทางเทคนิค",
@@ -170,7 +170,7 @@ const i18n = {
 
 const typingPhrases = {
     en: ["Computer Science Student", "Mobile App Developer", "Product Design Intern", "UI/UX Designer"],
-    th: ["นักศึกษาวิทยาการคอมพิวเตอร์", "นักพัฒนาแอปมือถือ", "นักออกแบบผลิตภัณฑ์", "นักออกแบบ UI/UX"]
+    th: ["นักศึกษาวิทยาการคอมพิวเตอร์", "พัฒนาแอปมือถือ", "ออกแบบผลิตภัณฑ์", "ออกแบบ UI/UX"]
 };
 
 function getCurrentLang() {
