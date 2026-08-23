@@ -428,9 +428,18 @@
                     <div class="title-underline"></div>
                 </div>
 
+                <div class="cert-filter-tabs reveal-up">
+                    <button class="cert-filter-btn active" data-filter="all" data-i18n="cert.filter.all">All</button>
+                    <button class="cert-filter-btn" data-filter="AWS">AWS</button>
+                    <button class="cert-filter-btn" data-filter="Microsoft">Microsoft</button>
+                    <button class="cert-filter-btn" data-filter="Cybersecurity" data-i18n="cert.filter.cyber">Cybersecurity</button>
+                    <button class="cert-filter-btn" data-filter="AI">AI</button>
+                    <button class="cert-filter-btn" data-filter="Jira">Jira</button>
+                </div>
+
                 <div class="certificate-grid">
                     <!-- Certificate Card 1: AWS -->
-                    <div class="cert-card glass-card reveal-up" data-cert-src="certificates/images/aws-ai-practitioner.jpg">
+                    <div class="cert-card glass-card reveal-up" data-category="AWS" data-cert-src="certificates/images/aws-ai-practitioner.jpg">
                         <div class="cert-image-container">
                             <img src="certificates/images/aws-ai-practitioner.jpg" alt="AWS Certified AI Practitioner Practice Exam Certificate" class="cert-image" loading="lazy">
                             <span class="cert-badge">AWS</span>
@@ -442,7 +451,7 @@
                     </div>
 
                     <!-- Certificate Card 2: Coursera -->
-                    <div class="cert-card glass-card reveal-up" data-cert-src="certificates/images/coursera-python-fundamentals.jpg">
+                    <div class="cert-card glass-card reveal-up" data-category="Microsoft" data-cert-src="certificates/images/coursera-python-fundamentals.jpg">
                         <div class="cert-image-container">
                             <img src="certificates/images/coursera-python-fundamentals.jpg" alt="Python Programming Fundamentals Certificate" class="cert-image" loading="lazy">
                             <span class="cert-badge">Microsoft</span>
@@ -453,7 +462,7 @@
                         </div>
                     </div>
 
-                    <div class="cert-card glass-card reveal-up" data-cert-src="certificates/images/coursera-uiux-design.png">
+                    <div class="cert-card glass-card reveal-up" data-category="Microsoft" data-cert-src="certificates/images/coursera-uiux-design.png">
                         <div class="cert-image-container">
                             <img src="certificates/images/coursera-uiux-design.png" alt="Fundamentals of UI/UX Design" class="cert-image" loading="lazy">
                             <span class="cert-badge">Microsoft</span>
@@ -465,7 +474,7 @@
                     </div>
 
                     <!-- Certificate Card 3: Cybersecurity -->
-                    <div class="cert-card glass-card reveal-up" data-cert-src="certificates/images/cybersecurity-certificate.jpg">
+                    <div class="cert-card glass-card reveal-up" data-category="Cybersecurity" data-cert-src="certificates/images/cybersecurity-certificate.jpg">
                         <div class="cert-image-container">
                             <img src="certificates/images/cybersecurity-certificate.jpg" alt="Cybersecurity Certificate" class="cert-image" loading="lazy">
                             <span class="cert-badge">Cybersecurity</span>
@@ -477,7 +486,7 @@
                     </div>
 
                     <!-- Certificate Card 4-8: AI training series (titles need confirmation) -->
-                    <div class="cert-card glass-card reveal-up" data-cert-src="certificates/images/ai-course-1.jpg">
+                    <div class="cert-card glass-card reveal-up" data-category="AI" data-cert-src="certificates/images/ai-course-1.jpg">
                         <div class="cert-image-container">
                             <img src="certificates/images/ai-course-1.jpg" alt="AI Course Certificate 1" class="cert-image" loading="lazy">
                             <span class="cert-badge">AI</span>
@@ -488,7 +497,7 @@
                         </div>
                     </div>
 
-                    <div class="cert-card glass-card reveal-up" data-cert-src="certificates/images/ai-course-2.jpg">
+                    <div class="cert-card glass-card reveal-up" data-category="AI" data-cert-src="certificates/images/ai-course-2.jpg">
                         <div class="cert-image-container">
                             <img src="certificates/images/ai-course-2.jpg" alt="AI Course Certificate 2" class="cert-image" loading="lazy">
                             <span class="cert-badge">AI</span>
@@ -499,7 +508,7 @@
                         </div>
                     </div>
 
-                    <div class="cert-card glass-card reveal-up" data-cert-src="certificates/images/ai-course-3.jpg">
+                    <div class="cert-card glass-card reveal-up" data-category="AI" data-cert-src="certificates/images/ai-course-3.jpg">
                         <div class="cert-image-container">
                             <img src="certificates/images/ai-course-3.jpg" alt="AI Course Certificate 3" class="cert-image" loading="lazy">
                             <span class="cert-badge">AI</span>
@@ -510,7 +519,7 @@
                         </div>
                     </div>
 
-                    <div class="cert-card glass-card reveal-up" data-cert-src="certificates/images/ai-course-4.jpg">
+                    <div class="cert-card glass-card reveal-up" data-category="AI" data-cert-src="certificates/images/ai-course-4.jpg">
                         <div class="cert-image-container">
                             <img src="certificates/images/ai-course-4.jpg" alt="AI Course Certificate 4" class="cert-image" loading="lazy">
                             <span class="cert-badge">AI</span>
@@ -521,7 +530,7 @@
                         </div>
                     </div>
 
-                    <div class="cert-card glass-card reveal-up" data-cert-src="certificates/images/ai-course-5.jpg">
+                    <div class="cert-card glass-card reveal-up" data-category="AI" data-cert-src="certificates/images/ai-course-5.jpg">
                         <div class="cert-image-container">
                             <img src="certificates/images/ai-course-5.jpg" alt="AI Course Certificate 5" class="cert-image" loading="lazy">
                             <span class="cert-badge">AI</span>
@@ -532,7 +541,7 @@
                         </div>
                     </div>
 
-                    <div class="cert-card glass-card reveal-up" data-cert-src="certificates/images/mhesi-ai-training.jpg">
+                    <div class="cert-card glass-card reveal-up" data-category="AI" data-cert-src="certificates/images/mhesi-ai-training.jpg">
                         <div class="cert-image-container">
                             <img src="certificates/images/mhesi-ai-training.jpg" alt="MHESI AI Training Certificate" class="cert-image" loading="lazy">
                             <span class="cert-badge">AI</span>
@@ -544,7 +553,7 @@
                     </div>
                   
                    <!-- Certificate Card : Jira -->
-                    <div class="cert-card glass-card reveal-up" data-cert-src="certificates/images/jira-apply-agile-practices.png">
+                    <div class="cert-card glass-card reveal-up" data-category="Jira" data-cert-src="certificates/images/jira-apply-agile-practices.png">
                         <div class="cert-image-container">
                             <img src="certificates/images/jira-apply-agile-practices.png" alt="Apply agile practices to manage your work Certificate" class="cert-image" loading="lazy">
                             <span class="cert-badge">Jira</span>
@@ -555,7 +564,7 @@
                         </div>
                     </div>
 
-                    <div class="cert-card glass-card reveal-up" data-cert-src="certificates/images/jira-explore-kanban.png">
+                    <div class="cert-card glass-card reveal-up" data-category="Jira" data-cert-src="certificates/images/jira-explore-kanban.png">
                         <div class="cert-image-container">
                             <img src="certificates/images/jira-explore-kanban.png" alt="Explore kanban in Jira Certificate" class="cert-image" loading="lazy">
                             <span class="cert-badge">Jira</span>
@@ -566,7 +575,7 @@
                         </div>
                     </div>
 
-                    <div class="cert-card glass-card reveal-up" data-cert-src="certificates/images/jira-explore-scrum.png">
+                    <div class="cert-card glass-card reveal-up" data-category="Jira" data-cert-src="certificates/images/jira-explore-scrum.png">
                         <div class="cert-image-container">
                             <img src="certificates/images/jira-explore-scrum.png" alt="Explore scrum in Jira Certificate" class="cert-image" loading="lazy">
                             <span class="cert-badge">Jira</span>
@@ -577,7 +586,7 @@
                         </div>
                     </div>
 
-                    <div class="cert-card glass-card reveal-up" data-cert-src="certificates/images/jira-get-started-agile.png">
+                    <div class="cert-card glass-card reveal-up" data-category="Jira" data-cert-src="certificates/images/jira-get-started-agile.png">
                         <div class="cert-image-container">
                             <img src="certificates/images/jira-get-started-agile.png" alt="Get started with agile Certificate" class="cert-image" loading="lazy">
                             <span class="cert-badge">Jira</span>
@@ -588,7 +597,7 @@
                         </div>
                     </div>
 
-                    <div class="cert-card glass-card reveal-up" data-cert-src="certificates/images/jira-get-started-jsm.png">
+                    <div class="cert-card glass-card reveal-up" data-category="Jira" data-cert-src="certificates/images/jira-get-started-jsm.png">
                         <div class="cert-image-container">
                             <img src="certificates/images/jira-get-started-jsm.png" alt="Get started quickly with Jira Service Management Certificate" class="cert-image" loading="lazy">
                             <span class="cert-badge">Jira</span>
@@ -599,7 +608,7 @@
                         </div>
                     </div>
 
-                    <div class="cert-card glass-card reveal-up" data-cert-src="certificates/images/jira-most-out-of-jsm.png">
+                    <div class="cert-card glass-card reveal-up" data-category="Jira" data-cert-src="certificates/images/jira-most-out-of-jsm.png">
                         <div class="cert-image-container">
                             <img src="certificates/images/jira-most-out-of-jsm.png" alt="Get the most out of Jira Service Management Certificate" class="cert-image" loading="lazy">
                             <span class="cert-badge">Jira</span>
@@ -610,7 +619,7 @@
                         </div>
                     </div>
 
-                    <div class="cert-card glass-card reveal-up" data-cert-src="certificates/images/jira-manage-customer-requests.png">
+                    <div class="cert-card glass-card reveal-up" data-category="Jira" data-cert-src="certificates/images/jira-manage-customer-requests.png">
                         <div class="cert-image-container">
                             <img src="certificates/images/jira-manage-customer-requests.png" alt="Manage customer requests in Jira Service Management Certificate" class="cert-image" loading="lazy">
                             <span class="cert-badge">Jira</span>
@@ -621,7 +630,7 @@
                         </div>
                     </div>
 
-                    <div class="cert-card glass-card reveal-up" data-cert-src="certificates/images/jira-personalize-work.png">
+                    <div class="cert-card glass-card reveal-up" data-category="Jira" data-cert-src="certificates/images/jira-personalize-work.png">
                         <div class="cert-image-container">
                             <img src="certificates/images/jira-personalize-work.png" alt="Personalize how you work in Jira Certificate" class="cert-image" loading="lazy">
                             <span class="cert-badge">Jira</span>

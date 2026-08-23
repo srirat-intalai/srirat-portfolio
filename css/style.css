@@ -920,6 +920,42 @@ html.light-theme .theme-toggle-btn .icon-moon { display: none; }
 /* --------------------------------------------------------------------------
    12. Certificate Gallery & Modal
    -------------------------------------------------------------------------- */
+.cert-filter-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 36px;
+}
+
+.cert-filter-btn {
+    padding: 10px 22px;
+    border-radius: var(--radius-full);
+    border: 1px solid var(--border-glass);
+    background: var(--tint-03);
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all var(--transition-fast);
+    font-family: inherit;
+}
+
+.cert-filter-btn:hover {
+    border-color: var(--border-glass-bright);
+    color: var(--text-primary);
+}
+
+.cert-filter-btn.active {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    border-color: transparent;
+    color: #fff;
+}
+
+.cert-card.cert-hidden {
+    display: none;
+}
+
 .certificate-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);

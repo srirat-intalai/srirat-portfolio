@@ -51,6 +51,7 @@ const i18n = {
         "proj.btn.dark": "Dark Mode UI", "proj.btn.light": "Light Mode UI",
 
         "cert.tag": "VERIFIED CREDENTIALS", "cert.title": "Certificates",
+        "cert.filter.all": "All", "cert.filter.cyber": "Cybersecurity",
         "cert1.issuer": "AWS Training & Certification — May 2026",
         "cert2.issuer": "Microsoft via Coursera — Jul 2026",
         "cert3.issuer": "NCSA e-Learning — 21 hrs · 12 Nov 2025 (2568)",
@@ -127,6 +128,7 @@ const i18n = {
         "proj.btn.dark": "ธีมมืด (Dark Mode)", "proj.btn.light": "ธีมสว่าง (Light Mode)",
 
         "cert.tag": "เกียรติบัตร", "cert.title": "ใบรับรอง",
+        "cert.filter.all": "ทั้งหมด", "cert.filter.cyber": "ไซเบอร์ซีเคียวริตี้",
         "cert1.issuer": "AWS Training & Certification — พฤษภาคม 2569",
         "cert2.issuer": "Microsoft ผ่าน Coursera — กรกฎาคม 2569",
         "cert3.issuer": "ผ่านระบบ NCSA e-Learning จำนวน 21 ชั่วโมง — 12 พฤศจิกายน 2568",
@@ -425,6 +427,30 @@ document.addEventListener('DOMContentLoaded', () => {
         if (e.key === 'Escape' && modal?.classList.contains('active')) {
             closeModal();
         }
+    });
+
+    /* ------------------------------------------------------------------------
+       7.1 Certificate Filter Tabs
+       ------------------------------------------------------------------------ */
+    const filterBtns = document.querySelectorAll('.cert-filter-btn');
+
+    filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            // switch active button
+            filterBtns.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+
+            const filter = btn.getAttribute('data-filter');
+
+            certCards.forEach(card => {
+                const category = card.getAttribute('data-category');
+                if (filter === 'all' || category === filter) {
+                    card.classList.remove('cert-hidden');
+                } else {
+                    card.classList.add('cert-hidden');
+                }
+            });
+        });
     });
 
     /* ------------------------------------------------------------------------
