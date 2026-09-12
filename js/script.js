@@ -1,16 +1,10 @@
-// ไฟล์ script.js ของเว็บพอร์ตโฟลิโอ
-// เขียนแบบง่ายๆ ฟังก์ชันธรรมดา ไม่มีอะไรซับซ้อน กันลืมเลยคอมเมนต์ไว้เยอะหน่อย
-
-
-/* ============ 1. หน้าปก กด Enter เข้าเว็บ ============ */
-
+/* ============ หน้าปก กด Enter เข้าเว็บ ============ */
 var coverPage = document.getElementById("coverPage");
 var mainSite = document.getElementById("mainSite");
 var btnEnter = document.getElementById("btnEnter");
 
 function enterWebsite() {
     coverPage.classList.add("hide");
-    // รอ transition เฟดจางค่อยซ่อนจริงๆ กับโชว์เนื้อหาเว็บ
     setTimeout(function () {
         coverPage.style.display = "none";
         mainSite.style.display = "block";
@@ -22,7 +16,7 @@ if (btnEnter) {
 }
 
 
-/* ============ 2. ปุ่มสลับธีมมืด/สว่าง ============ */
+/* ============ ปุ่มสลับธีมมืด/สว่าง ============ */
 
 var btnTheme = document.getElementById("btnTheme");
 var iconSun = document.getElementById("iconSun");
@@ -44,7 +38,6 @@ function toggleTheme() {
     localStorage.setItem("theme", isDark ? "dark" : "light");
 }
 
-// พอเปิดเว็บมา เช็คก่อนว่าเคยตั้งธีมไว้ไหม
 var savedTheme = localStorage.getItem("theme");
 if (savedTheme === "dark") {
     document.body.classList.add("dark-mode");
@@ -56,7 +49,7 @@ if (btnTheme) {
 }
 
 
-/* ============ 3. ปุ่มสลับภาษา ไทย/อังกฤษ ============ */
+/* ============ ปุ่มสลับภาษา ไทย/อังกฤษ ============ */
 
 var btnLang = document.getElementById("btnLang");
 var langLabel = document.getElementById("langLabel");
@@ -82,7 +75,7 @@ if (btnLang) {
 }
 
 
-/* ============ 4. เมนูแฮมเบอร์เกอร์ (จอมือถือ) ============ */
+/* ============ เมนูแฮมเบอร์เกอร์ (จอมือถือ) ============ */
 
 var btnBurger = document.getElementById("btnBurger");
 var menu = document.getElementById("menu");
@@ -93,7 +86,6 @@ if (btnBurger) {
     });
 }
 
-// พอกดลิงก์เมนูแล้วให้เมนูมือถือหุบลงเอง
 var menuLinkList = document.querySelectorAll(".menuLink");
 for (var i = 0; i < menuLinkList.length; i++) {
     menuLinkList[i].addEventListener("click", function () {
@@ -102,14 +94,13 @@ for (var i = 0; i < menuLinkList.length; i++) {
 }
 
 
-/* ============ 5. สไลด์รูปในหัวข้อ About Me ============ */
+/* ============ สไลด์รูปในหัวข้อ About Me ============ */
 
 var slideImgList = document.querySelectorAll(".slideImg");
 var slideDotsBox = document.getElementById("slideDots");
 var slideIndex = 0;
 var slideTimer = null;
 
-// สร้างจุดๆ ด้านล่างรูป ตามจำนวนรูปที่มี
 for (var s = 0; s < slideImgList.length; s++) {
     var dot = document.createElement("span");
     if (s === 0) {
@@ -121,7 +112,6 @@ for (var s = 0; s < slideImgList.length; s++) {
 var slideDotList = document.querySelectorAll("#slideDots span");
 
 function showSlide(index) {
-    // วนกลับไปกลับมาถ้าเลขเกินขอบเขต
     if (index >= slideImgList.length) {
         index = 0;
     }
@@ -182,7 +172,7 @@ if (slideImgList.length > 0) {
 }
 
 
-/* ============ 5b. ปุ่มลูกศรเลื่อนผลงานซ้าย-ขวา ============ */
+/* ============ ปุ่มลูกศรเลื่อนผลงานซ้าย-ขวา ============ */
 
 var projectList = document.getElementById("projectList");
 var projPrev = document.getElementById("projPrev");
@@ -233,14 +223,13 @@ if (certNext) {
 }
 
 
-/* ============ 6. ปุ่มกรองหมวดใบรับรอง ============ */
+/* ============ ปุ่มกรองหมวดใบรับรอง ============ */
 
 var filterBtnList = document.querySelectorAll(".filterBtn");
 var certBoxList = document.querySelectorAll(".certBox");
 
 for (var f = 0; f < filterBtnList.length; f++) {
     filterBtnList[f].addEventListener("click", function () {
-        // เอา active ออกจากทุกปุ่มก่อน แล้วค่อยใส่ให้ปุ่มที่กด
         for (var g = 0; g < filterBtnList.length; g++) {
             filterBtnList[g].classList.remove("active");
         }
@@ -260,14 +249,13 @@ for (var f = 0; f < filterBtnList.length; f++) {
 }
 
 
-/* ============ 7. กล่องดูรูปใบรับรองขยายใหญ่ ============ */
+/* ============ กล่องดูรูปใบรับรองขยายใหญ่ ============ */
 
 var certPopup = document.getElementById("certPopup");
 var certPopupImg = document.getElementById("certPopupImg");
 var certPopupBg = document.getElementById("certPopupBg");
 var certPopupClose = document.getElementById("certPopupClose");
 
-// ใช้ได้กับรูปใบรับรองจริง (ไม่ใช่ลิงก์ไปเปิด PDF) รูปผลงาน และรูปกิจกรรมด้วย กดดูขยายได้เหมือนกัน
 var certImgList = document.querySelectorAll("img.certImg, img.projectImg, img.actImg");
 
 for (var p = 0; p < certImgList.length; p++) {
@@ -290,7 +278,7 @@ if (certPopupClose) {
 }
 
 
-/* ============ 8. ฟอร์มติดต่อ เช็คก่อนส่ง ============ */
+/* ============ ฟอร์มติดต่อ เช็คก่อนส่ง ============ */
 
 var contactForm = document.getElementById("contactForm");
 
@@ -306,7 +294,6 @@ if (contactForm) {
 
         var ทุกอย่างผ่าน = true;
 
-        // ชื่อ ห้ามว่าง
         if (inputName.value.trim() === "") {
             inputName.parentElement.classList.add("errorNow");
             ทุกอย่างผ่าน = false;
@@ -314,7 +301,6 @@ if (contactForm) {
             inputName.parentElement.classList.remove("errorNow");
         }
 
-        // อีเมล เช็คแบบง่ายๆ ต้องมี @ กับ .
         var emailValue = inputEmail.value.trim();
         if (emailValue.indexOf("@") === -1 || emailValue.indexOf(".") === -1) {
             inputEmail.parentElement.classList.add("errorNow");
@@ -323,7 +309,6 @@ if (contactForm) {
             inputEmail.parentElement.classList.remove("errorNow");
         }
 
-        // หัวข้อ ห้ามว่าง
         if (inputSubject.value.trim() === "") {
             inputSubject.parentElement.classList.add("errorNow");
             ทุกอย่างผ่าน = false;
@@ -331,7 +316,6 @@ if (contactForm) {
             inputSubject.parentElement.classList.remove("errorNow");
         }
 
-        // ข้อความ ห้ามว่าง
         if (inputMessage.value.trim() === "") {
             inputMessage.parentElement.classList.add("errorNow");
             ทุกอย่างผ่าน = false;
@@ -343,7 +327,6 @@ if (contactForm) {
             formOk.classList.add("show");
             contactForm.reset();
 
-            // เดี๋ยวให้ข้อความขอบคุณหายไปเองหลัง 5 วิ
             setTimeout(function () {
                 formOk.classList.remove("show");
             }, 5000);
@@ -352,7 +335,7 @@ if (contactForm) {
 }
 
 
-/* ============ 9. สไลด์รูปในกรอบโทรศัพท์ หัวข้อ Soft Skills (เปลี่ยนเองอัตโนมัติเหมือนรูป About Me) ============ */
+/* ============ สไลด์รูปในกรอบโทรศัพท์ หัวข้อ Soft Skills (เปลี่ยนเองอัตโนมัติเหมือนรูป About Me) ============ */
 
 var softSlideImgList = document.querySelectorAll(".softSlideImg");
 

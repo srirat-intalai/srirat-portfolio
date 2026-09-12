@@ -1,6 +1,3 @@
-/* ไฟล์ css อันเดียวจบ ของเว็บพอร์ตโฟลิโอ ศรีรัตน์ */
-/* สีที่ใช้ทั้งเว็บ เก็บไว้ตรงนี้เลยจะได้ไม่ต้องพิมพ์โค้ดสีซ้ำๆ */
-
 :root{
     --สีครีม: #FFF8DC;
     --สีเขียวเข้ม: #104744;
@@ -9,7 +6,6 @@
     --สีขาว: #FFFFFF;
     --สีฟ้า: #0095D9;
 
-    /* ค่าตั้งต้นของธีม (โหมดสว่าง) */
     --bg: var(--สีครีม);
     --text: var(--สีเขียวเข้ม);
     --card-bg: var(--สีขาว);
@@ -18,7 +14,6 @@
     --line: rgba(16,71,68,0.15);
 }
 
-/* พอกดปุ่มสลับธีม จะมี class dark-mode มาแปะที่ body แล้วสีจะเปลี่ยนตรงนี้ */
 body.dark-mode{
     --bg: var(--สีกรมท่า);
     --text: var(--สีขาว);
@@ -39,14 +34,12 @@ html{
 }
 
 body{
-    /* โหมดสว่าง: ไล่สีแบบ "Eid Serenity" เขียวมิ้นอมครีม เป็นก้อนๆ นุ่มๆ ตามภาพตัวอย่างที่ให้มา */
     background:
         radial-gradient(circle at 12% 15%, rgba(32,178,170,0.4), transparent 40%),
         radial-gradient(circle at 88% 12%, rgba(32,178,170,0.28), transparent 38%),
         radial-gradient(circle at 20% 90%, rgba(32,178,170,0.3), transparent 42%),
         radial-gradient(circle at 90% 85%, rgba(32,178,170,0.32), transparent 42%),
         var(--bg);
-    /* ต้อง fixed ไม่งั้นตำแหน่ง % ของไล่สีจะอิงความสูงทั้งหน้า (ยาวมาก) แทนที่จะอิงจอที่เห็น */
     background-attachment: fixed;
     color: var(--text);
     font-family: 'Athiti', 'Roboto Mono', sans-serif;
@@ -55,7 +48,6 @@ body{
     position: relative;
 }
 
-/* โหมดมืด: ไล่สีแบบ "Ocean Blue" แสงส่องกลางจอ พร้อมเส้นตารางจางๆ ตามภาพตัวอย่างที่ให้มา */
 body.dark-mode{
     background:
         radial-gradient(circle at 50% 32%, rgba(0,149,217,0.4), transparent 55%),
@@ -66,7 +58,6 @@ body.dark-mode{
     background-attachment: fixed;
 }
 
-/* ก้อนสีเบลอลอยๆ อยู่หลังเนื้อหาสุด เอาไว้แต่งพื้นหลังให้มีมิติ */
 .bgBlob{
     position: fixed;
     width: 420px;
@@ -110,7 +101,6 @@ img{
     display: block;
 }
 
-/* ข้อความภาษาไทยใช้ฟอนต์ Athiti / อังกฤษใช้ Roboto Mono ตามที่โจทย์กำหนด */
 .th{
     font-family: 'Athiti', sans-serif;
 }
@@ -118,17 +108,10 @@ img{
     font-family: 'Roboto Mono', monospace;
 }
 
-/* หัวข้อใหญ่ๆ ให้ใช้ฟอนต์ Nanum Myeongjo แบบเท่ๆ หน่อย */
 .titleBig, .homeName, .coverName, .logo{
     font-family: 'Nanum Myeongjo', serif;
 }
 
-/* ตัวช่วยสลับภาษา - ปกติโชว์ th ซ่อน en ไว้ก่อน */
-/* ไม่ต้องกำหนด display ให้ .th เพราะปล่อยให้เป็นค่าเริ่มต้นของแท็กนั้นๆ ไปเลย (span=inline, p/h3/div=block) */
-/* หมายเหตุกันลืม: ใช้ body:not(.show-en) แทนการเขียน .en{display:none} เฉยๆ
-   เพราะบางอย่างเช่นปุ่ม .btn หรือ .infoLabel มันกำหนด display ของตัวเองไว้ด้วย (เช่น inline-block)
-   ถ้าเขียนแบบเดิมง่ายๆ จะแพ้กฎพวกนั้น (specificity เท่ากัน แต่มาทีหลัง) เลยเจอบั๊กภาษาไทย-อังกฤษโชว์พร้อมกัน
-   วิธีนี้ทำให้กฎซ่อน/โชว์ภาษามี specificity สูงกว่าเสมอ ไม่ต้องพึ่ง !important เต็มไปหมด */
 body:not(.show-en) .en{ display: none; }
 body.show-en .th{ display: none; }
 
@@ -186,6 +169,8 @@ body.show-en .th{ display: none; }
     border-radius: 20px;
     padding: 1px 8px;
     margin-left: 6px;
+    white-space: nowrap;
+    flex-shrink: 0;
 }
 
 /* ================= หน้าปก / กด Enter ================= */
@@ -264,7 +249,6 @@ body.show-en .th{ display: none; }
     background: var(--สีเขียวมิ้น);
 }
 
-/* เว็บหลักซ่อนไว้ก่อน จนกว่าจะกด Enter */
 #mainSite{
     display: none;
 }
@@ -358,9 +342,6 @@ body.show-en .th{ display: none; }
     flex-wrap: wrap;
 }
 
-/* รูปย้ายมาไว้ทางขวาแล้ว (สลับลำดับใน html) อยู่นิ่งๆ เฉยๆ ไม่ต้องลอยตามสกอลล์ */
-/* align-items:stretch ด้านบนทำให้รูป (สูงแบบ auto) ถูกยืดเท่ากับกรอบข้อความเอง ไม่ต้องเขียน height:100% เอง
-   (ลองใส่ height:100% ตรงๆ แล้วมันพังรูปยืดเกินกรอบ เพราะกรอบ .homeBox เองก็สูงแบบ auto เหมือนกัน) */
 .homePhoto{
     width: 300px;
     object-fit: cover;
@@ -373,7 +354,6 @@ body.show-en .th{ display: none; }
     min-width: 260px;
 }
 
-/* กรอบโปร่งๆ แบบกระจกใส (glassmorphism) ครอบข้อความหน้าหลักไว้ */
 .glassBox{
     background: rgba(255,255,255,0.35);
     -webkit-backdrop-filter: blur(14px);
@@ -460,7 +440,6 @@ body.dark-mode .glassBox{
     display: grid;
     grid-template-columns: 400px 1fr;
     gap: 44px;
-    /* center แนวตั้ง รูปจะได้ลอยอยู่กึ่งกลางระหว่างบล็อกประวัติ (ข้างบน) กับบล็อกการศึกษา (ข้างล่าง) แทนที่จะค้างอยู่บนสุด */
     align-items: center;
 }
 
@@ -557,7 +536,6 @@ body.dark-mode .glassBox{
     font-weight: 700;
 }
 
-/* หัวข้อย่อย "เส้นทางการศึกษา" ที่ย้ายมาอยู่ในหน้า About แล้ว ไม่ได้อยู่กลางจอเหมือน tagSmall ปกติ */
 .aboutSubTag{
     text-align: left;
     margin: 34px 0 14px;
@@ -628,7 +606,7 @@ body.dark-mode .glassBox{
 /* ================= SKILLS ================= */
 .skillGrid{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
     gap: 20px;
 }
 
@@ -648,10 +626,11 @@ body.dark-mode .glassBox{
     font-size: 0.9rem;
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
+    row-gap: 4px;
     gap: 10px;
 }
 
-/* หัวข้อย่อยในกล่องสกิลที่รวมหลายหมวด เช่น Data & Data Engineering */
 .skillSubHead{
     font-size: 0.75rem;
     font-weight: 600;
@@ -666,7 +645,6 @@ body.dark-mode .glassBox{
     margin-top: 4px;
 }
 
-/* วงกลมไอคอนหน้าชื่อสกิลแต่ละอัน */
 .skillIcon{
     flex-shrink: 0;
     width: 30px;
@@ -690,13 +668,11 @@ body.dark-mode .glassBox{
     color: var(--accent);
 }
 
-/* โลโก้ GitHub กับ Linux เป็นสีดำล้วน มองไม่เห็นตอนธีมมืด เลยกลับสีให้ */
 body.dark-mode .skillIconInvert img{
     filter: invert(1) brightness(1.8);
 }
 
 /* ================= PROJECTS ================= */
-/* เลื่อนดูซ้าย-ขวาแทนเรียงลงมายาวๆ กดปุ่มลูกศรเลื่อนก็ได้ หรือจะลากสไลด์เองก็ได้ */
 .scrollWrap{
     position: relative;
     display: flex;
@@ -714,7 +690,6 @@ body.dark-mode .skillIconInvert img{
     padding: 6px 4px 16px;
 }
 
-/* ตั้งความสูงขั้นต่ำของการ์ดผลงานไว้เท่ากันหมด รูปจะได้ไม่เล็กไม่ใหญ่ไม่เท่ากันเวลาข้อความยาวไม่เท่ากัน */
 .projectBox{
     display: grid;
     grid-template-columns: 260px 1fr;
@@ -733,7 +708,6 @@ body.dark-mode .skillIconInvert img{
     cursor: pointer;
 }
 
-/* ปุ่มลูกศรเลื่อนซ้าย-ขวา ทรงกลมเหมือนปุ่มสไลด์รูปหน้า About */
 .scrollBtn{
     flex-shrink: 0;
     width: 40px;
@@ -850,7 +824,6 @@ body.dark-mode .skillIconInvert img{
     border-color: var(--accent);
 }
 
-/* เลื่อนดูซ้าย-ขวาแบบเดียวกับการ์ดผลงาน/กิจกรรม แทนที่จะเรียงเป็นตารางยาวๆ */
 .certGrid{
     display: flex;
     flex-direction: row;
@@ -908,9 +881,6 @@ body.dark-mode .skillIconInvert img{
     opacity: 0.8;
 }
 
-/* กล่องดูรูปใบรับรองขยาย */
-/* เก็บไว้เป็น display:none ก่อนเสมอ (ไม่งั้น attribute hidden ใน html จะไม่ทำงาน
-   เพราะกฎ display ที่เราเขียนเองมันแรงกว่า [hidden] ของเบราว์เซอร์ เจอบั๊กหน้ามืดทั้งเว็บมาแล้ว!) */
 .certPopup{
     display: none;
     position: fixed;
@@ -939,7 +909,6 @@ body.dark-mode .skillIconInvert img{
     display: flex;
 }
 
-/* ถ้ารูปใหญ่กว่าจอ ให้ย่อลงพอดีจอแบบคงสัดส่วน ไม่ล้นออกไปนอกหน้าจอ */
 .certPopupBox img{
     max-width: 90vw;
     max-height: 88vh;
@@ -961,7 +930,6 @@ body.dark-mode .skillIconInvert img{
 }
 
 /* ================= ACTIVITIES ================= */
-/* เลื่อนดูซ้าย-ขวาแบบเดียวกับการ์ดผลงาน แทนที่จะเรียงลงมายาวๆ */
 .actList{
     display: flex;
     flex-direction: row;
@@ -972,7 +940,6 @@ body.dark-mode .skillIconInvert img{
     padding: 6px 4px 16px;
 }
 
-/* การ์ดแบบ Slide แนวตั้ง รูปอยู่บน ข้อความอยู่ล่าง กว้างเท่ากันทุกใบ ส่วนความสูงปล่อยให้ flex stretch ดึงเท่ากันเอง */
 .actBox{
     display: flex;
     flex-direction: column;
@@ -1029,7 +996,6 @@ body.dark-mode .skillIconInvert img{
     max-width: 380px;
 }
 
-/* กรอบตรงกลางทำเป็นทรงจอโทรศัพท์ (ขอบสีเดียวกับตัวหนังสือ + รอยบากบนจอ) แทนวงกลมเดิม ตามภาพตัวอย่าง */
 .softPhotoBox{
     flex-shrink: 0;
     position: relative;
@@ -1084,7 +1050,6 @@ body.dark-mode .skillIconInvert img{
     font-size: 0.88rem;
 }
 
-/* กรอบลอยๆ เบาๆ ขึ้นๆ ลงๆ เอง ให้ดูมีชีวิตชีวาหน่อย */
 .floatCard{
     animation: floatUpDown 5s ease-in-out infinite;
 }
@@ -1179,7 +1144,6 @@ body.dark-mode .skillIconInvert img{
     margin-top: 4px;
 }
 
-/* ข้อความ error มีสองภาษาแยกกัน เลยไม่ใช้ class th/en ตรงๆ กันไปชนกับตัวสลับภาษา */
 .errMsgEn{ display: none; }
 
 .formRow.errorNow .errMsgTh{ display: block; }
@@ -1256,7 +1220,6 @@ body.show-en .formRow.errorNow .errMsgEn{ display: block; }
     .projectImg{
         height: 220px;
     }
-    /* จอเล็กการ์ดผลงานสูงมาก ปุ่มลูกศรอยู่กลางการ์ดพอดีจะโดนดันลงล่างจนมองไม่เห็น เลยขยับมาแปะไว้บนสุดแทน (การ์ดกิจกรรมเป็น slide เตี้ยๆ อยู่แล้ว เลยปล่อยให้อยู่กึ่งกลางตามปกติ) */
     #projects .scrollWrap{
         align-items: flex-start;
     }
