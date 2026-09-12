@@ -850,15 +850,23 @@ body.dark-mode .skillIconInvert img{
     border-color: var(--accent);
 }
 
+/* เลื่อนดูซ้าย-ขวาแบบเดียวกับการ์ดผลงาน/กิจกรรม แทนที่จะเรียงเป็นตารางยาวๆ */
 .certGrid{
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    display: flex;
+    flex-direction: row;
     gap: 20px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    padding: 6px 4px 16px;
 }
 
 .certBox{
+    flex: 0 0 auto;
+    width: min(240px, 75vw);
     overflow: hidden;
     cursor: pointer;
+    scroll-snap-align: start;
 }
 
 .certImg{

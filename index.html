@@ -1,4 +1,4 @@
-f<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="th">
 <head>
 <meta charset="UTF-8">
@@ -504,7 +504,9 @@ f<!DOCTYPE html>
                 <button type="button" class="filterBtn" data-cat="cyber">Cybersecurity</button>
             </div>
 
-            <div class="certGrid" id="certGrid">
+            <div class="scrollWrap">
+                <button type="button" class="scrollBtn scrollBtnLeft" id="certPrev">&#10094;</button>
+                <div class="certGrid" id="certGrid">
 
                 <!-- AWS พฤษภาคม 2569 -->
                 <div class="certBox card" data-cat="aws">
@@ -667,6 +669,8 @@ f<!DOCTYPE html>
                     </div>
                 </div>
 
+                </div>
+                <button type="button" class="scrollBtn scrollBtnRight" id="certNext">&#10095;</button>
             </div>
         </div>
     </section>

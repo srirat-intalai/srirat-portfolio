@@ -216,6 +216,22 @@ if (actNext) {
     });
 }
 
+var certGrid = document.getElementById("certGrid");
+var certPrev = document.getElementById("certPrev");
+var certNext = document.getElementById("certNext");
+
+if (certPrev) {
+    certPrev.addEventListener("click", function () {
+        certGrid.scrollLeft = certGrid.scrollLeft - 380;
+    });
+}
+
+if (certNext) {
+    certNext.addEventListener("click", function () {
+        certGrid.scrollLeft = certGrid.scrollLeft + 380;
+    });
+}
+
 
 /* ============ 6. ปุ่มกรองหมวดใบรับรอง ============ */
 
