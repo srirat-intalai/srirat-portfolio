@@ -105,7 +105,7 @@ img{
     font-family: 'Athiti', sans-serif;
 }
 .en{
-    font-family: 'Roboto Mono', monospace;
+    font-family: 'Athiti', sans-serif;
 }
 
 .titleBig, .homeName, .coverName, .logo{
@@ -352,6 +352,20 @@ body.show-en .th{ display: none; }
 .homeText{
     flex: 1;
     min-width: 260px;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    align-content: start;
+}
+
+/* วางข้อความไทย/อังกฤษซ้อนกันในช่องเดียว กล่องจะสูงเท่าภาษาที่ยาวกว่า สลับภาษาแล้วไม่ขยับ */
+.homeText > .tagLine{ grid-row: 1; }
+.homeText > h3{ grid-row: 2; grid-column: 1; }
+.homeText > p.th, .homeText > p.en{ grid-row: 3; grid-column: 1; }
+.homeText > .homeBtnRow{ grid-row: 4; }
+body:not(.show-en) .homeText > .en,
+body.show-en .homeText > .th{
+    display: block;
+    visibility: hidden;
 }
 
 .glassBox{
@@ -587,6 +601,11 @@ body.dark-mode .glassBox{
     margin-bottom: 10px;
 }
 
+.timeCardTop > div{
+    flex: 1 1 180px;
+    min-width: 0;
+}
+
 .timeSchool{
     display: block;
     font-size: 0.85rem;
@@ -601,6 +620,7 @@ body.dark-mode .glassBox{
     padding: 4px 12px;
     border-radius: 20px;
     height: fit-content;
+    white-space: nowrap;
 }
 
 /* ================= SKILLS ================= */
