@@ -590,7 +590,17 @@ body.dark-mode .glassBox{
 }
 
 .timeCard{
-    padding: 30px 28px;
+    padding: 26px 28px;
+}
+
+.timeCard h3{
+    font-size: 1.05rem;
+    line-height: 1.5;
+    margin-bottom: 4px;
+}
+
+.timeCard p{
+    font-size: 0.92rem;
 }
 
 .timeCardTop{
