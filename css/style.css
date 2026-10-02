@@ -363,17 +363,6 @@ body.show-en .th{ display: none; }
     align-content: start;
 }
 
-/* วางข้อความไทย/อังกฤษซ้อนกันในช่องเดียว กล่องจะสูงเท่าภาษาที่ยาวกว่า สลับภาษาแล้วไม่ขยับ */
-.homeText > .tagLine{ grid-row: 1; }
-.homeText > h3{ grid-row: 2; grid-column: 1; }
-.homeText > p.th, .homeText > p.en{ grid-row: 3; grid-column: 1; }
-.homeText > .homeBtnRow{ grid-row: 4; }
-body:not(.show-en) .homeText > .en,
-body.show-en .homeText > .th{
-    display: block;
-    visibility: hidden;
-}
-
 .glassBox{
     background: rgba(255,255,255,0.35);
     -webkit-backdrop-filter: blur(14px);
